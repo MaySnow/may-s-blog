@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="../dist/css/blog.css"/>
+</head>
+<body>
+    <div class="blog-masthead">
+        <div class="container">
+            <div class="navbar-header blog-nav-header">
+                <a class="navbar-brand" href="#">May的博客</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="blog-nav-item active">
+                        <a  href="#">主页</a>
+                    </li>
+                    <li class="blog-nav-item" >
+                        <a href="#">文章</a>
+                    </li>
+                    <li class="blog-nav-item" >
+                        <a href="#">插件</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../dist/js/jquery-2.0.2.js"></script>
+    <script src="../dist/js/bootstrap.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           $(".blog-nav-item").click(function(){
+               $(".navbar-nav").find(".active").removeClass("active");
+               $(this).addClass("active");
+           });
+       })
+    </script>
+</body>
+</html>
